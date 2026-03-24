@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex 3D Ultimate</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <section class="left-panel">
+            <div class="center-line"></div>
+            <div class="pokeball-ui-circle">
+                <div class="number-display">
+                    <span class="digit pixel-text" id="d1">0</span>
+                    <span class="digit pixel-text" id="d2">0</span>
+                    <span class="digit pixel-text" id="d3">0</span>
+                    <span class="digit pixel-text" id="d4">0</span>
+                </div>
+                <div class="controls-row">
+                    <button class="arrow-btn" id="prev-btn">◀</button>
+                    <button class="arrow-btn" id="next-btn">▶</button>
+                </div>
+            </div>
+            <div class="search-section">
+                <p class="pixel-text">CONSULTAR POKÉDEX</p>
+                <button id="search-btn" class="pixel-text">SEARCH</button>
+            </div>
+        </section>
+
+        <section class="right-panel" id="display-screen">
+            <div id="pokemon-viewer">
+                <button class="form-arrow left" id="prev-form">◀</button>
+                <div id="pokemon-img-container"></div>
+                <button class="form-arrow right" id="next-form">▶</button>
+            </div>
+
+            <div id="pokemon-content" class="content-overlay">
+                <button id="shiny-btn" class="special-btn shiny-off">★</button>
+                <div id="pokemon-info-wrapper" class="info-layout"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
